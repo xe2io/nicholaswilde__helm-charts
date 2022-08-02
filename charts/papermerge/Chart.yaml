@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: v2.0.1
-version: 1.0.2
+version: 1.0.3
 name: papermerge
 description: Designed for scanned documents. Perfect software that will help you reduce paper clutter and keep your business organized.
 type: application
@@ -9,15 +9,15 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge"
 icon: "https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png"
 dependencies:
   - name: common
-    version: ~0.1.13
+    version: ~0.1.14
     repository: https://nicholaswilde.github.io/helm-charts/
   - name: mariadb
-    version: ~1.0.4
-    repository: https://nicholaswilde.github.io/helm-charts/
+    version: ~1.0.7
+    repository: https://xe2io.github.io/nicholaswilde__helm-charts/
     condition: mariadb.enabled
   - name: postgres
-    version: ~0.1.0
-    repository: https://nicholaswilde.github.io/helm-charts/
+    version: ~0.1.1
+    repository: https://xe2io.github.io/nicholaswilde__helm-charts/
     condition: postgres.enabled
 keywords:
   - paper
@@ -33,6 +33,8 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
+    - kind: changed
+      description: Use common 0.1.14: bump mariadb to 1.0.5, postgres to 0.1.1
     - kind: changed
       description: Bump mariadb to 1.0.4
     - kind: changed
