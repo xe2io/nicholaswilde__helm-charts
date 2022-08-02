@@ -1198,6 +1198,41 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Bump common to 0.1.14.
+        - kind: changed
+          description: Bump tag to version-110.4.21mariabionic.
+      artifacthub.io/images: |
+        - name: mariadb
+          image: ghcr.io/linuxserver/mariadb:version-110.4.21mariabionic
+    apiVersion: v2
+    appVersion: 110.4.21
+    created: "2022-08-02T21:46:24.522683171Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.14
+    description: The open source relational database
+    digest: 47a48423c79e12a42b84abccf150e89230e059bf8ec4844ac7769332585c8b56
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/mariadb
+    icon: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/mariadb-icon.png
+    keywords:
+    - db
+    - database
+    - mariadb
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: mariadb
+    sources:
+    - https://mariadb.org/
+    - https://github.com/linuxserver/docker-mariadb
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/mariadb-1.0.7/mariadb-1.0.7.tgz
+    version: 1.0.7
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump tag to version-110.4.21mariabionic.
       artifacthub.io/images: |
         - name: mariadb
@@ -1687,6 +1722,39 @@ entries:
     - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
     version: 0.1.0
   postgres:
+  - annotations:
+      artifacthub.io/changes: |
+        - Bump common to 0.1.14.
+        - Initial release.
+      artifacthub.io/images: |
+        - name: template
+          image: postgres:13.3
+    apiVersion: v2
+    appVersion: "13.3"
+    created: "2022-08-02T21:46:24.771025096Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.14
+    description: The World's Most Advanced Open Source Relational Database
+    digest: 776421c61ab38262cb73297003843dff7ee717daee340d79f4316715c6fcd9b7
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/postgres
+    icon: https://d1q6f0aelx0por.cloudfront.net/product-logos/library-postgres-logo.png
+    keywords:
+    - postgres
+    - database
+    - relational
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: postgres
+    sources:
+    - https://www.postgresql.org/
+    - https://github.com/docker-library/postgres
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/postgres-0.1.1/postgres-0.1.1.tgz
+    version: 0.1.1
   - annotations:
       artifacthub.io/changes: |
         - Initial release.
@@ -2364,4 +2432,4 @@ entries:
     urls:
     - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/writefreely-1.0.0/writefreely-1.0.0.tgz
     version: 1.0.0
-generated: "2022-08-02T21:44:23.532513031Z"
+generated: "2022-08-02T21:46:24.771047797Z"
