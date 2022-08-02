@@ -1,0 +1,2367 @@
+apiVersion: v1
+entries:
+  audacity:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-3.0.2 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: audacity
+          image: ghcr.io/linuxserver/audacity:version-3.0.2
+    apiVersion: v2
+    appVersion: 3.0.2
+    created: "2022-08-02T21:44:12.781533212Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: An easy-to-use, multi-track audio editor and recorder
+    digest: ade03729d19840b9eff5f38d501db733e5434bee710f6943d1c5848d5b6d09f9
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/audacity
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/audacity-logo.png
+    keywords:
+    - audacity
+    - music
+    - recorder
+    - editor
+    - audio
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: audacity
+    sources:
+    - https://github.com/linuxserver/docker-audacity
+    - https://www.audacityteam.org/
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/audacity-0.1.4/audacity-0.1.4.tgz
+    version: 0.1.4
+  babybuddy:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to version-v1.9.0
+      artifacthub.io/images: |
+        - name: babybuddy
+          image: ghcr.io/linuxserver/babybuddy:version-v1.9.0
+    apiVersion: v2
+    appVersion: v1.9.0
+    created: "2022-08-02T21:44:12.953866341Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: postgres.enabled
+      name: postgres
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.0
+    description: Helps caregivers track sleep, feedings, diaper changes, tummy time
+      and more to learn about and predict baby's needs without (as much) guess work.
+    digest: 71a9ff5462c7d70f0a8b176b7ea0854ec562e8e89426f6854485041e5d192846
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/babybuddy
+    icon: https://github.com/babybuddy/babybuddy/raw/master/babybuddy/static_src/logo/icon.png
+    keywords:
+    - baby
+    - buddy
+    - tracker
+    - parents
+    - parenting
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: babybuddy
+    sources:
+    - https://github.com/babybuddy/babybuddy
+    - https://github.com/nicholaswilde/docker-babybuddy
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/babybuddy-2.3.0/babybuddy-2.3.0.tgz
+    version: 2.3.0
+  beets:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to version-1.5.0
+        - kind: changed
+          description: BREAKING! Move to release version 1.5.0
+      artifacthub.io/images: |
+        - name: beets
+          image: ghcr.io/linuxserver/beets:version-1.5.0
+    apiVersion: v2
+    appVersion: 1.5.0
+    created: "2022-08-02T21:44:13.122400761Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A music library manager and not, for the most part, a music player.
+    digest: 19afa7dfa416a59ed51b660108b3757afcf462ffeb5032552347e6f217842891
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/beets
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/beets.png
+    keywords:
+    - music
+    - library
+    - manager
+    - player
+    - beets
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: beets
+    sources:
+    - https://github.com/linuxserver/docker-beets
+    - https://beets.io/
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/beets-2.0.0/beets-2.0.0.tgz
+    version: 2.0.0
+  blog:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: changed
+          description: Change tag to version-v1.3 in order to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: blog
+          image: ghcr.io/nicholaswilde/blog:version-v1.3
+    apiVersion: v2
+    appVersion: v1.3
+    created: "2022-08-02T21:44:13.297094306Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: Lightweight self-hosted facebook-styled PHP blog.
+    digest: 2e63c5b392c4271cf7f145bf49da8dccf6df98de5c8b0ca2c4d393daadeb713c
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/blog
+    keywords:
+    - blog
+    - php
+    - self
+    - hosted
+    - facebook
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: blog
+    sources:
+    - https://github.com/m1k1o/blog
+    - https://github.com/nicholaswilde/docker-blog
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/blog-1.0.0/blog-1.0.0.tgz
+    version: 1.0.0
+  boinc-client:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues
+      artifacthub.io/images: |
+        - name: boinc-client
+          image: boinc/client:arm32v7
+    apiVersion: v2
+    appVersion: 7.12.0
+    created: "2022-08-02T21:44:13.454291706Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A program that lets you donate your idle computer time to science
+      projects like SETI@home, Climateprediction.net, Rosetta@home, World Community
+      Grid, and many others.
+    digest: 6c2eec2d747e80d1ee154d72f81b8ab91d340115dc6ee6f9e13f4f3abdf6aa55
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/boinc-client
+    icon: https://pbs.twimg.com/profile_images/1155837449131692032/0xgZMZeJ_400x400.jpg
+    keywords:
+    - boinc
+    - client
+    - seti
+    - home
+    - rosetta
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: boinc-client
+    sources:
+    - https://boinc.berkeley.edu/
+    - https://hub.docker.com/r/boinc/client
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/boinc-client-0.1.3/boinc-client-0.1.3.tgz
+    version: 0.1.3
+  booksonic:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-1.2 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: booksonic
+          image: ghcr.io/linuxserver/booksonic:version-1.2
+    apiVersion: v2
+    appVersion: "1.2"
+    created: "2022-08-02T21:44:13.638159474Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: The selfhosted audiobook server
+    digest: 6e0c9ac63194be4a972ade90ce54017dc1bfe7fa0772053e7002e5d677810104
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/booksonic
+    icon: http://booksonic.org/assets/img/booksonic.png
+    keywords:
+    - audio
+    - audiobook
+    - server
+    - book
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: booksonic
+    sources:
+    - http://booksonic.org/
+    - https://hub.docker.com/r/linuxserver/booksonic
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/booksonic-1.0.1/booksonic-1.0.1.tgz
+    version: 1.0.1
+  bookstack:
+  - annotations:
+      artifacthub.io/changes: |
+        - Deprecate
+      artifacthub.io/images: |
+        - name: bookstack
+          image: ghcr.io/linuxserver/bookstack:v0.31.8-ls126
+    apiVersion: v2
+    appVersion: v0.31.8
+    created: "2022-08-02T21:44:13.83283027Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    deprecated: true
+    description: ⛔ DEPRECATED A simple, self-hosted, easy-to-use platform for organising
+      and storing information.
+    digest: 06fa906dc85bdffb45ec69241730d68697eee87775c5d1e52ad6bfd5b38f12e3
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/bookstack
+    icon: https://avatars3.githubusercontent.com/u/20912696
+    keywords:
+    - bookstack
+    - book
+    - stack
+    - organizer
+    - server
+    - hosted
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: bookstack
+    sources:
+    - https://www.bookstackapp.com/
+    - https://hub.docker.com/r/linuxserver/bookstack
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/bookstack-0.1.19/bookstack-0.1.19.tgz
+    version: 0.1.19
+  chyrp-lite:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Change tag to version-v2021.03 in order to reduce the number of chart updates
+        - kind: removed
+          description: secret from values.yaml
+      artifacthub.io/images: |
+        - name: chyrp-lite
+          image: ghcr.io/nicholaswilde/chyrp-lite:version-v2021.03
+    apiVersion: v2
+    appVersion: v2021.03
+    created: "2022-08-02T21:44:14.017108039Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: An ultra-lightweight blogging engine, written in PHP.
+    digest: 811da7f45ffdf261cf441d25a13881139f4220149ee0b90873a1978b013f38c5
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/chyrp-lite
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/chyrp-lite.svg
+    keywords:
+    - docker
+    - chyrp
+    - lite
+    - blog
+    - engine
+    - php
+    - twig
+    - html5
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: chyrp-lite
+    sources:
+    - https://github.com/xenocrat/chyrp-lite
+    - https://github.com/nicholaswilde/docker-chyrp-lite
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/chyrp-lite-1.0.0/chyrp-lite-1.0.0.tgz
+    version: 1.0.0
+  clarkson:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Change image tag to version-v1.1.2 to reduce number of chart releases.
+      artifacthub.io/images: |
+        - name: clarkson
+          image: ghcr.io/linuxserver/clarkson:version-v1.1.2
+    apiVersion: v2
+    appVersion: v1.1.2
+    created: "2022-08-02T21:44:14.218469252Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.3
+    description: A web-based dashboard application that gives you a neat and clean
+      interface for logging your fuel fill-ups for all of your vehicles.
+    digest: 28089e48c86653d8ea900d181456a707d9ca7be34a4344d247f57edb60e2bb68
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/clarkson
+    icon: https://github.com/linuxserver/Clarkson/raw/master/src/mstile-150x150.png
+    keywords:
+    - fuel
+    - car
+    - log
+    - fill-up
+    - vehicle
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: clarkson
+    sources:
+    - https://github.com/linuxserver/Clarkson
+    - https://hub.docker.com/r/linuxserver/clarkson
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/clarkson-0.2.3/clarkson-0.2.3.tgz
+    version: 0.2.3
+  cloud9:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Changed tag to version-1.29.2 to reduce number of chart updates.
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: removed
+          description: probes from values.yaml which enables them by default.
+    apiVersion: v2
+    appVersion: 1.29.2
+    created: "2022-08-02T21:44:14.375793153Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A complete web based IDE with terminal access
+    digest: cc8eff81c51dd19c0dfbd6f2851fd53fc0b71c1b2dae95e855341bdc6f4ed0ab
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/cloud9
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/cloud9.png
+    keywords:
+    - cloud9
+    - ide
+    - terminal
+    - web
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: cloud9
+    sources:
+    - https://aws.amazon.com/cloud9/
+    - https://github.com/c9/core
+    - https://hub.docker.com/r/linuxserver/cloud9
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/cloud9-1.0.0/cloud9-1.0.0.tgz
+    version: 1.0.0
+  code-server:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to version-v3.11.1
+      artifacthub.io/images: |
+        - name: code-server
+          image: ghcr.io/linuxserver/code-server:version-v3.11.1
+    apiVersion: v2
+    appVersion: v3.11.1
+    created: "2022-08-02T21:44:14.562556028Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: Run VS Code on any machine anywhere and access it in the browser.
+    digest: a8baf7511306d922bfafac24e16f9b815962c602579127bc04d5a186d401ef5e
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/code-server
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/code-server.jpg
+    keywords:
+    - code
+    - vs
+    - visual studio
+    - vscode
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: code-server
+    sources:
+    - https://github.com/cdr/code-server
+    - https://hub.docker.com/r/linuxserver/code-server
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/code-server-1.1.1/code-server-1.1.1.tgz
+    version: 1.1.1
+  common:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Remove additionalProperties from values.schema.json
+    apiVersion: v2
+    created: "2022-08-02T21:44:14.714927216Z"
+    description: Function library for nicholaswilde's helm charts
+    digest: 11b591d2697c1a34478cf9a9d38e821b2ddecbbb67e46f3338ce86aebb4cdac0
+    home: https://github.com/nicholaswilde/helm-charts/tree/master/charts/common
+    keywords:
+    - nicholaswilde
+    - common
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: common
+    type: library
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/common-0.1.14/common-0.1.14.tgz
+    version: 0.1.14
+  cryptpad:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to version-4.10.0
+      artifacthub.io/images: |
+        - name: cryptpad
+          image: ghcr.io/nicholaswilde/cryptpad:version-4.10.0
+    apiVersion: v2
+    appVersion: 4.10.0
+    created: "2022-08-02T21:44:14.923405247Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A Zero Knowledge realtime collaborative editor.
+    digest: 99912a41bfb49216a84001fb5e978bd826c92d52e416f5fb17495e1d6de08578
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/cryptpad
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/cryptpad.jpg
+    keywords:
+    - cryptpad
+    - pad
+    - text
+    - editor
+    - collaborate
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: cryptpad
+    sources:
+    - https://cryptpad.fr/
+    - https://hub.docker.com/r/nicholaswilde/cryptpad
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/cryptpad-2.3.0/cryptpad-2.3.0.tgz
+    version: 2.3.0
+  davos:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump tag to 2.2.1-ls76
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: removed
+          description: secret from values.yaml
+      artifacthub.io/images: |
+        - name: davos
+          image: ghcr.io/linuxserver/davos:2.2.1-ls76
+    apiVersion: v2
+    appVersion: 2.2.1
+    created: "2022-08-02T21:44:15.099521596Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: An FTP automation tool that periodically scans given host locations
+      for new files.
+    digest: cd400ff2979ec6b3724739ad110d1547bd7cb861f5142f50e497743c5a1ede03
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/davos
+    icon: https://github.com/linuxserver/davos/raw/master/src/main/resources/static/android-chrome-192x192.png
+    keywords:
+    - davos
+    - ftp
+    - automation
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: davos
+    sources:
+    - https://github.com/linuxserver/docker-davos
+    - https://github.com/linuxserver/davos/
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/davos-1.0.0/davos-1.0.0.tgz
+    version: 1.0.0
+  digikam:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to version-7.3.0
+      artifacthub.io/images: |
+        - name: digikam
+          image: ghcr.io/linuxserver/digikam:version-7.3.0
+    apiVersion: v2
+    appVersion: 7.3.0
+    created: "2022-08-02T21:44:15.292634988Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: Professional Photo Management with the Power of Open Source
+    digest: 82c9475c705ba9b92bf6efba37e17e81437ece4058b5249ae037af38b9a0d478
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/digikam
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/digikam.png
+    keywords:
+    - digikam
+    - photo
+    - management
+    - image
+    - gallery
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: digikam
+    sources:
+    - https://github.com/linuxserver/docker-digikam
+    - https://www.digikam.org/
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/digikam-1.0.0/digikam-1.0.0.tgz
+    version: 1.0.0
+  diun:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to 4.19.0
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Simplify values.yaml
+      artifacthub.io/images: |
+        - name: diun
+          image: ghcr.io/crazy-max/diun:4.19.0
+    apiVersion: v2
+    appVersion: 4.19.0
+    created: "2022-08-02T21:44:15.522531373Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: Docker image update notifier
+    digest: 6354a0838b2a34d01e0c949416fefc60d5c3fe5cb54b2b517cbe132af529608f
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/diun
+    icon: https://raw.githubusercontent.com/crazy-max/diun/master/.res/diun.png
+    keywords:
+    - docker
+    - notifier
+    - notification
+    - image
+    - update
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: diun
+    sources:
+    - https://crazymax.dev/diun/
+    - https://hub.docker.com/r/crazymax/diun
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/diun-1.0.0/diun-1.0.0.tgz
+    version: 1.0.0
+  doublecommander:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-0.8.2-1 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: doublecommander
+          image: ghcr.io/linuxserver/doublecommander:version-0.8.2-1
+    apiVersion: v2
+    appVersion: 0.8.2-1
+    created: "2022-08-02T21:44:15.688863797Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A free cross platform open source file manager with two panels side
+      by side.
+    digest: 0182587a20cdb946b41879f9102558c6220b2637194066f2b73b44d4f319681d
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/doublecommander
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/doublecommander-icon.png
+    keywords:
+    - doublecommander
+    - file
+    - manager
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: doublecommander
+    sources:
+    - https://github.com/linuxserver/docker-doublecommander
+    - https://doublecmd.sourceforge.io/
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/doublecommander-1.0.2/doublecommander-1.0.2.tgz
+    version: 1.0.2
+  etherpad:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to 1.8.14
+      artifacthub.io/images: |
+        - name: etherpad
+          image: ghcr.io/nicholaswilde/etherpad:version-1.8.14
+    apiVersion: v2
+    appVersion: 1.8.14
+    created: "2022-08-02T21:44:15.857810927Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.5
+    - condition: postgres.enabled
+      name: postgres
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.0
+    description: A real-time collaborative editor scalable to thousands of simultaneous
+      real time users.
+    digest: 1ff7a805142c8981f8fe9b3d2b62c972a554e281ea02cf307c883d62cc82002c
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/etherpad
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/etherpad.jpg
+    keywords:
+    - etherpad
+    - editor
+    - notepad
+    - pad
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: etherpad
+    sources:
+    - https://etherpad.org/
+    - https://github.com/ether/etherpad-lite
+    - https://hub.docker.com/r/nicholaswilde/etherpad
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/etherpad-1.0.2/etherpad-1.0.2.tgz
+    version: 1.0.2
+  filezilla:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Update port default in values schema.
+      artifacthub.io/images: |
+        - name: template
+          image: ghcr.io/linuxserver/filezilla:version-3.51.0-r1
+    apiVersion: v2
+    appVersion: 3.51.0-r1
+    created: "2022-08-02T21:44:16.030094666Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A Helm chart for Kubernetes
+    digest: 7e5fa5e2f84409ddeee4bbafb0d9e420c619fee0abd0c36e721ea1c38241e797
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/filezilla
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/filezilla-logo.png
+    keywords:
+    - filezilla
+    - ftp
+    - sftp
+    - ftps
+    - client
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: filezilla
+    sources:
+    - https://filezilla-project.org/
+    - https://github.com/linuxserver/docker-filezilla
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/filezilla-1.0.1/filezilla-1.0.1.tgz
+    version: 1.0.1
+  firefox-syncserver:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+        - Added icon
+      artifacthub.io/images: |
+        - name: firefox-syncserver
+          image: ghcr.io/crazy-max/firefox-syncserver:1.8.0
+    apiVersion: v2
+    appVersion: 1.8.0
+    created: "2022-08-02T21:44:16.218319445Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: This is an all-in-one package for running a self-hosted Firefox Sync
+      server.
+    digest: 21ac37a55407cbd25f86b40a2d90e4fb694135e26c8154c6c3e2641abee67e3f
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/firefox-syncserver
+    icon: https://upload.wikimedia.org/wikipedia/en/0/01/Firefox_Sync_logo.png
+    keywords:
+    - server
+    - sync
+    - syncserver
+    - firefox
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: firefox-syncserver
+    sources:
+    - https://moz-services-docs.readthedocs.io/en/latest/howtos/run-sync-1.5.html
+    - https://hub.docker.com/r/crazymax/firefox-syncserver
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/firefox-syncserver-0.1.3/firefox-syncserver-0.1.3.tgz
+    version: 0.1.3
+  formalms:
+  - annotations:
+      artifacthub.io/changes: |
+        - Fixed linting issues.
+        - Bumped common to ~0.1.8
+      artifacthub.io/images: |
+        - name: formalms
+          image: ghcr.io/nicholaswilde/formalms:2.3.0.2-ls1
+    apiVersion: v2
+    appVersion: 2.3.0.2
+    created: "2022-08-02T21:44:16.393700392Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A Helm chart for Kubernetes
+    digest: d136b6b7421f3a736065d0bcd3b83f30d148ad692285738e4d67949d88445167
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/formalms
+    icon: https://media-exp1.licdn.com/dms/image/C4E0BAQGF6CojTW-SDg/company-logo_200_200/0/1545057555063?e=1619049600&v=beta&t=68ckor92IoZT7EPApN26_OC37xKHeJ2VEGfvOfUfEh0
+    keywords:
+    - lms
+    - forma
+    - learning
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: formalms
+    sources:
+    - https://www.formalms.org/
+    - https://hub.docker.com/r/nicholaswilde/formalms
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/formalms-0.1.2/formalms-0.1.2.tgz
+    version: 0.1.2
+  fossil:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Cleanup values.yaml
+        - kind: changed
+          description: Bump common tag to 0.1.9
+        - kind: changed
+          description: Bump tag to 2.15.1-ls4
+      artifacthub.io/images: |
+        - name: fossil
+          image: ghcr.io/nicholaswilde/fossil:2.15.1-ls4
+    apiVersion: v2
+    appVersion: 2.15.1
+    created: "2022-08-02T21:44:16.565278429Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.9
+    description: A simple, high-reliability, distributed software configuration management
+      system
+    digest: b992d9d83a4399b055c7d1f1931f7a3c85ee53c6f4bc2a93105a9d93120ebf97
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/fossil
+    icon: https://fossil-scm.org/home/doc/trunk/www/fossil3.gif
+    keywords:
+    - fossil
+    - scm
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: fossil
+    sources:
+    - https://fossil-scm.org/
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/fossil-1.0.0/fossil-1.0.0.tgz
+    version: 1.0.0
+  friendica:
+  - annotations:
+      artifacthub.io/changes: |
+        - Add support for mariadb
+      artifacthub.io/images: |
+        - name: friendica
+          image: friendica:2021.04
+    apiVersion: v2
+    appVersion: "2021.04"
+    created: "2022-08-02T21:44:16.732835056Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.9
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.3
+    description: Welcome to the free social web.
+    digest: a82beeba88fe87d35d53be25825e17b3709c631873c6cbd6119a4d799d6747a3
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/friendica
+    icon: https://d1q6f0aelx0por.cloudfront.net/product-logos/library-friendica-logo.png
+    keywords:
+    - friend
+    - social
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: friendica
+    sources:
+    - https://friendi.ca/
+    - https://hub.docker.com/_/friendica
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/friendica-1.0.0/friendica-1.0.0.tgz
+    version: 1.0.0
+  golinks:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: changed
+          description: Change tag to version-154c581 in order to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: golinks
+          image: ghcr.io/nicholaswilde/golinks:version-154c581
+    apiVersion: v2
+    appVersion: 154c581
+    created: "2022-08-02T21:44:16.904758194Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A web app that allows you to create smart bookmarks, commands and
+      aliases by pointing your web browser's default search engine at a running instance.
+    digest: f0e2cd0fd7fdcfed7fbd80744f0bd132e0de2c66804dfeebd1d75240dd6d1991
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/golinks
+    keywords:
+    - search
+    - browser
+    - bookmarks
+    - smart-bookmarks
+    - golinks
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: golinks
+    sources:
+    - https://github.com/prologic/golinks
+    - https://github.com/nicholaswilde/docker-golinks
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/golinks-1.0.0/golinks-1.0.0.tgz
+    version: 1.0.0
+  gotify:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Bump tag to 2.0.23
+        - kind: changed
+          description: Simplify values.yaml
+      artifacthub.io/images: |
+        - name: gotify
+          image: gotify/server-arm7:2.0.23
+    apiVersion: v2
+    appVersion: 2.0.23
+    created: "2022-08-02T21:44:17.092061771Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: a simple server for sending and receiving messages
+    digest: efc13ba86506894db91fe4acf72619e8d8418d0f146df9b4c2832c7685fc0ebb
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/gotify
+    icon: https://gotify.net/img/logo.png
+    keywords:
+    - server
+    - gotify
+    - messages
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: gotify
+    sources:
+    - https://gotify.net/
+    - https://github.com/gotify/server
+    - https://hub.docker.com/r/gotify/server
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/gotify-1.0.0/gotify-1.0.0.tgz
+    version: 1.0.0
+  grav:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to version-1.7.18
+      artifacthub.io/images: |
+        - name: grav
+          image: ghcr.io/linuxserver/grav:version-1.7.18
+    apiVersion: v2
+    appVersion: 1.7.18
+    created: "2022-08-02T21:44:17.241553351Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A Fast, Simple, and Flexible, file-based Web-platform.
+    digest: 3d82eedf387c61a2ce24185c870ad7d6f0dc37b8817a6544d245cd5953b2fbe1
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/grav
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/grav-logo.png
+    keywords:
+    - grav
+    - web
+    - platform
+    - file
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: grav
+    sources:
+    - https://github.com/linuxserver/docker-grav
+    - https://github.com/getgrav/grav/
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/grav-0.1.6/grav-0.1.6.tgz
+    version: 0.1.6
+  haste:
+  - annotations:
+      artifacthub.io/changes: |
+        - Deprecated
+      artifacthub.io/images: |
+        - name: haste
+          image: ghcr.io/nicholaswilde/haste:ce75235-ls2
+    apiVersion: v2
+    appVersion: ce75235
+    created: "2022-08-02T21:44:17.402287361Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    deprecated: true
+    description: ⛔ DEPRECATED An open-source pastebin software written in Node.JS,
+      which is easily installable in any network.
+    digest: 9907ec4e5ebd53eaf7967e8615377cbda032029f5046cceb66d934ac7b66f4af
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/haste
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/haste.png
+    keywords:
+    - haste
+    - pastebin
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: haste
+    sources:
+    - https://github.com/zneix/haste-server
+    - https://hub.docker.com/r/nicholaswilde/haste
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/haste-0.1.5/haste-0.1.5.tgz
+    version: 0.1.5
+  headphones:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-58edc604 in order to reduce the number of chart updates
+      artifacthub.io/images: |
+        - name: headphones
+          image: ghcr.io/linuxserver/headphones:version-58edc604
+    apiVersion: v2
+    appVersion: 58edc604
+    created: "2022-08-02T21:44:17.593429347Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: An automated music downloader for NZB and Torrent, written in Python.
+      It supports SABnzbd, NZBget, Transmission, µTorrent and Blackhole.
+    digest: e24397c6b307045aa9a500ba3e5f531a851cdcfc63452b26242928b62effc9a7
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/headphones
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/headphones-banner.png
+    keywords:
+    - headphones
+    - music
+    - downloader
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: headphones
+    sources:
+    - https://github.com/linuxserver/docker-headphones
+    - https://github.com/rembo10/headphones
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/headphones-1.0.1/headphones-1.0.1.tgz
+    version: 1.0.1
+  hedgedoc:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump chart to version-1.9.0
+      artifacthub.io/images: |
+        - name: hedgedoc
+          image: ghcr.io/linuxserver/hedgedoc:version-1.9.0
+    apiVersion: v2
+    appVersion: 1.9.0
+    created: "2022-08-02T21:44:17.770689299Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.5
+    description: HedgeDoc lets you create real-time collaborative markdown notes.
+    digest: 2f79f8a5fc69ca54c82004ae66840a7e335c221d131f9259ff067be8f498a787
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/hedgedoc
+    icon: https://avatars1.githubusercontent.com/u/67865462
+    keywords:
+    - hedgedoc
+    - hedge
+    - doc
+    - markdown
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: hedgedoc
+    sources:
+    - https://github.com/hedgedoc/hedgedoc
+    - https://hub.docker.com/r/linuxserver/hedgedoc
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/hedgedoc-1.1.0/hedgedoc-1.1.0.tgz
+    version: 1.1.0
+  installer:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Simplify values.json
+        - kind: changed
+          description: Change tag to version-0.2.9 in order to reduce the number of chart updates
+      artifacthub.io/images: |
+        - name: installer
+          image: ghcr.io/nicholaswilde/installer:version-0.2.9
+    apiVersion: v2
+    appVersion: 0.2.9
+    created: "2022-08-02T21:44:17.951520559Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Quickly install pre-compiled binaries from Github releases.
+    digest: 4fa761104db3f766eb703353224d974853d92f6010dc761d98d20f7350825ba3
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/installer
+    keywords:
+    - installer
+    - binary
+    - binaries
+    - compiled
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: installer
+    sources:
+    - https://github.com/jpillora/installer
+    - https://hub.docker.com/r/nicholaswilde/installer
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/installer-1.0.0/installer-1.0.0.tgz
+    version: 1.0.0
+  kanboard:
+  - annotations:
+      artifacthub.io/changes: |
+        - Deprecated
+      artifacthub.io/images: |
+        - name: kanboard
+          image: ghcr.io/kanboard/kanboard:v1.2.19
+    apiVersion: v2
+    appVersion: 1.2.18
+    created: "2022-08-02T21:44:18.097562931Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    deprecated: true
+    description: ⛔ DEPRECATED A free and open source Kanban project management software.
+    digest: 5979eb04f4c4c39bacca7aef2fa00cd1dad34b4e6608c33244848a7868dca59f
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/kanboard
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/kanboard.png
+    keywords:
+    - kanboard
+    - project management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: kanboard
+    sources:
+    - https://kanboard.org/
+    - https://hub.docker.com/r/kanboard/kanboard
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/kanboard-0.1.8/kanboard-0.1.8.tgz
+    version: 0.1.8
+  leantime:
+  - annotations:
+      artifacthub.io/changes: |
+        - Bump tag to 2.1.7-ls6
+      artifacthub.io/images: |
+        - name: template
+          image: ghcr.io/nicholaswilde/leantime:2.1.7-ls6
+    apiVersion: v2
+    appVersion: 2.1.7
+    created: "2022-08-02T21:44:18.261616149Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: Straightforward open source project management system to make your
+      ideas reality.
+    digest: af3907e0e794b9e9650dc5ab1d3e5725bdf1d55122994a56e74bfbbd42904912
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/leantime
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/leantime.jpg
+    keywords:
+    - leantime
+    - project
+    - management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: leantime
+    sources:
+    - https://leantime.io/
+    - https://hub.docker.com/r/nicholaswilde/leantime
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/leantime-0.1.2/leantime-0.1.2.tgz
+    version: 0.1.2
+  mariadb:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to version-110.4.21mariabionic.
+      artifacthub.io/images: |
+        - name: mariadb
+          image: ghcr.io/linuxserver/mariadb:version-110.4.21mariabionic
+    apiVersion: v2
+    appVersion: 110.4.21
+    created: "2022-08-02T21:44:18.408036222Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: The open source relational database
+    digest: 4d46e9473a358899b8b0a9188535977bf08b1674ebd1cc53c40b5a0774908234
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/mariadb
+    icon: https://github.com/linuxserver/docker-templates/raw/master/linuxserver.io/img/mariadb-icon.png
+    keywords:
+    - db
+    - database
+    - mariadb
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: mariadb
+    sources:
+    - https://mariadb.org/
+    - https://github.com/linuxserver/docker-mariadb
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/mariadb-1.0.6/mariadb-1.0.6.tgz
+    version: 1.0.6
+  medusa:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to version-v0.5.17
+      artifacthub.io/images: |
+        - name: medusa
+          image: ghcr.io/linuxserver/medusa:version-v0.5.17
+    apiVersion: v2
+    appVersion: v0.5.17
+    created: "2022-08-02T21:44:18.565663823Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: An automatic Video Library Manager for TV Shows
+    digest: 3d15c7f59f3bed8e075f34e6e37485c87ff3f0939097b294c1a30a1c33df2502
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/medusa
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/medusa-icon.png
+    keywords:
+    - medusa
+    - video
+    - library
+    - manager
+    - tv
+    - shows
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: medusa
+    sources:
+    - https://github.com/linuxserver/docker-medusa
+    - https://pymedusa.com/
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/medusa-0.1.6/medusa-0.1.6.tgz
+    version: 0.1.6
+  mstream:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to version-v5.2.5
+      artifacthub.io/images: |
+        - name: mstream
+          image: ghcr.io/linuxserver/mstream:version-v5.2.5
+    apiVersion: v2
+    appVersion: v5.2.5
+    created: "2022-08-02T21:44:18.751399197Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A personal music streaming server
+    digest: 48a00607468245b51449b1809765b6ac75ac15c1dcf3541494b10a4509795243
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/mstream
+    icon: https://raw.githubusercontent.com/nicholaswilde/helm-charts/main/images/mstream.png
+    keywords:
+    - mstream
+    - server
+    - music
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: mstream
+    sources:
+    - https://github.com/linuxserver/docker-mstream
+    - https://mstream.io/
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/mstream-2.1.2/mstream-2.1.2.tgz
+    version: 2.1.2
+  muximux:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Changed tag to version-057352e8 to reduce number of chart updates.
+      artifacthub.io/images: |
+        - name: muximux
+          image: ghcr.io/linuxserver/muximux:version-057352e8
+    apiVersion: v2
+    appVersion: "057352e8"
+    created: "2022-08-02T21:44:18.924677438Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A lightweight portal to view & manage your HTPC apps without having
+      to run anything more than a PHP enabled webserver
+    digest: 2c269bebc3244cd3d506c1cf6a55f6611de6e0e0455648592cd06cf48467147b
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/muximux
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/muximux-icon.png
+    keywords:
+    - muximux
+    - htpc
+    - manage
+    - portal
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: muximux
+    sources:
+    - https://github.com/linuxserver/docker-muximux
+    - https://github.com/mescon/Muximux
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/muximux-1.0.1/muximux-1.0.1.tgz
+    version: 1.0.1
+  notes:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Change tag to version-ee287b9 in order to reduce the number of chart updates.
+        - kind: changed
+          description: simply values.yaml
+        - kind: removed
+          description: secret from values.yaml
+      artifacthub.io/images: |
+        - name: notes
+          image: ghcr.io/nicholaswilde/notes:version-ee287b9
+    apiVersion: v2
+    appVersion: ee287b9
+    created: "2022-08-02T21:44:19.073205716Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A self-hosted note taking web app that lets you keep track of your
+      notes and search them in a easy and minimal way.
+    digest: 0f374e99cef16c0e916f01ced1d4503da4d38424e794660f376c9770c064d180
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/notes
+    keywords:
+    - markdown
+    - notes
+    - app
+    - web
+    - webapp
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: notes
+    sources:
+    - https://github.com/prologic/notes
+    - https://github.com/nicholaswilde/docker-notes
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/notes-1.0.0/notes-1.0.0.tgz
+    version: 1.0.0
+  novnc:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Change tag to version-1.2.0 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: novnc
+          image: ghcr.io/nicholaswilde/novnc:version-1.2.0
+    apiVersion: v2
+    appVersion: 1.2.0
+    created: "2022-08-02T21:44:19.233043523Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: The open source VNC client
+    digest: 495232d69332c3aab41418f01f184e6a4064ed171cfbe63542539b0bad673ed8
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/novnc
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/novnc.png
+    keywords:
+    - novnc
+    - vnc
+    - remote
+    - desktop
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: novnc
+    sources:
+    - https://novnc.com/
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/novnc-1.0.0/novnc-1.0.0.tgz
+    version: 1.0.0
+  odoo:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-14.0 in order to reduce the number of chart updates
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: changed
+          description: Bump common to 0.1.13
+      artifacthub.io/images: |
+        - name: odoo
+          image: ghcr.io/nicholaswilde/odoo:version-14.0
+    apiVersion: v2
+    appVersion: "14.0"
+    created: "2022-08-02T21:44:19.437802845Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: postgres.enabled
+      name: postgres
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.0
+    description: All-in-one business software. Beautiful. Easy-to-use. CRM, Accounting,
+      PM, HR, Procurement, Point of Sale, MRP, Marketing, etc.
+    digest: 7bd7573c05da11282ace52e94db2f05df245fd97de300db588048b16e992957f
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/odoo
+    icon: https://pbs.twimg.com/profile_images/970608340014419969/1bpCWJhS_400x400.jpg
+    keywords:
+    - odoo
+    - crm
+    - pm
+    - hr
+    - accounting
+    - mrp
+    - marketing
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: odoo
+    sources:
+    - https://www.odoo.com/
+    - https://hub.docker.com/repository/docker/nicholaswilde/odoo
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/odoo-1.0.0/odoo-1.0.0.tgz
+    version: 1.0.0
+  olivetin:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Bump tag to 2021-07-19
+      artifacthub.io/images: |
+        - name: olivetin
+          image: ghcr.io/nicholaswilde/olivetin:version-2021-07-19
+    apiVersion: v2
+    appVersion: "2021-07-19"
+    created: "2022-08-02T21:44:19.594051643Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A web interface for running Linux shell commands.
+    digest: 93b3416d47adabdff1ab12b00a3b2887aed484a3d79759797c27b8bc41d3895e
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/olivetin
+    icon: https://avatars.githubusercontent.com/u/85869711?s=200&v=4
+    keywords:
+    - olivetin
+    - shell
+    - commands
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: olivetin
+    sources:
+    - https://github.com/OliveTin/OliveTin
+    - https://github.com/nicholaswilde/docker-olivetin
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/olivetin-1.0.2/olivetin-1.0.2.tgz
+    version: 1.0.2
+  papermerge:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump mariadb to 1.0.4
+        - kind: changed
+          description: Change tag to version-v2.0.1 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: papermerge
+          image: ghcr.io/linuxserver/papermerge:version-v2.0.1
+    apiVersion: v2
+    appVersion: v2.0.1
+    created: "2022-08-02T21:44:19.776140106Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.4
+    - condition: postgres.enabled
+      name: postgres
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.0
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
+    digest: a5158aa001f1005d3fbe219a15d51c15e81709ae88829640af85e864263b7cdb
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
+    keywords:
+    - paper
+    - merge
+    - document
+    - scan
+    - scanner
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: papermerge
+    sources:
+    - https://www.papermerge.com/
+    - https://hub.docker.com/r/linuxserver/papermerge
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/papermerge-1.0.2/papermerge-1.0.2.tgz
+    version: 1.0.2
+  photoshow:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-48aabb98 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: photoshow
+          image: ghcr.io/linuxserver/photoshow:version-48aabb98
+    apiVersion: v2
+    appVersion: 48aabb98
+    created: "2022-08-02T21:44:19.957702269Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A gallery software at its easiest, it doesn't even require a database.
+    digest: b385c7741be9ae49cf0c7f3fe65b799e784fd49aecbf67b9465aade4bbd2a8b1
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/photoshow
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/photoshow-icon.png
+    keywords:
+    - photoshow
+    - photo
+    - show
+    - gallary
+    - image
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: photoshow
+    sources:
+    - https://github.com/thibaud-rohmer/PhotoShow
+    - https://github.com/linuxserver/docker-photoshow
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/photoshow-1.0.1/photoshow-1.0.1.tgz
+    version: 1.0.1
+  piwigo:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial release.
+      artifacthub.io/images: |
+        - name: piwigo
+          image: ghcr.io/linuxserver/piwigo:version-11.5.0
+    apiVersion: v2
+    appVersion: 11.5.0
+    created: "2022-08-02T21:44:20.107164649Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A is photo gallery software for the web, built by an active community
+      of users and developers.
+    digest: 48d02aa449ef609170dd1197422505a1970e1c0bc7509ee035d137dac882f6ed
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/piwigo
+    icon: https://avatars.githubusercontent.com/u/9326886?s=200&v=4
+    keywords:
+    - piwigo
+    - gallery
+    - photo
+    - image
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: piwigo
+    sources:
+    - http://piwigo.org/
+    - https://github.com/linuxserver/docker-piwigo
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/piwigo-1.0.0/piwigo-1.0.0.tgz
+    version: 1.0.0
+  pixapop:
+  - annotations:
+      artifacthub.io/changes: |
+        - Cleanup values.yaml
+      artifacthub.io/images: |
+        - name: pixapop
+          image: ghcr.io/linuxserver/pixapop:v1.2-ls15
+    apiVersion: v2
+    appVersion: v1.2
+    created: "2022-08-02T21:44:20.267798358Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: An open-source single page application to view your photos in the
+      easiest way possible.
+    digest: 8d6b75e8c0eb47edeb3af2bd3b1ec91cfd8bc7ea539330975f516f7dfd156eec
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/pixapop
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/pixapop.png
+    keywords:
+    - pixapop
+    - photo
+    - gallery
+    - image
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: pixapop
+    sources:
+    - https://github.com/linuxserver/docker-pixapop
+    - https://github.com/bierdok/pixapop
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/pixapop-1.0.0/pixapop-1.0.0.tgz
+    version: 1.0.0
+  podgrab:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: podgrab
+          image: ghcr.io/akhilrex/podgrab:1.0.0
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-08-02T21:44:20.415237534Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A self-hosted podcast manager/downloader/archiver tool to download
+      podcast episodes as soon as they become live with an integrated player.
+    digest: 9689f6dff0baea63bf528859ee51f9c4b0ad441562d3f58774c7fbd15a2355a5
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/podgrab
+    keywords:
+    - podcast
+    - downloader
+    - archiver
+    - player
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: podgrab
+    sources:
+    - https://github.com/akhilrex/podgrab
+    - https://hub.docker.com/r/akhilrex/podgrab
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/podgrab-0.1.0/podgrab-0.1.0.tgz
+    version: 0.1.0
+  postgres:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: template
+          image: postgres:13.3
+    apiVersion: v2
+    appVersion: "13.3"
+    created: "2022-08-02T21:44:20.597834499Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: The World's Most Advanced Open Source Relational Database
+    digest: 23c3579e23975fd86c447e4cc70de9f6f1a64c3b44440a8ded6957ab06f807b1
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/postgres
+    icon: https://d1q6f0aelx0por.cloudfront.net/product-logos/library-postgres-logo.png
+    keywords:
+    - postgres
+    - database
+    - relational
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: postgres
+    sources:
+    - https://www.postgresql.org/
+    - https://github.com/docker-library/postgres
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/postgres-0.1.0/postgres-0.1.0.tgz
+    version: 0.1.0
+  projectsend:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to version-r1295.
+        - kind: changed
+          description: Bump mariadb to 1.0.5.
+      artifacthub.io/images: |
+        - name: projectsend
+          image: ghcr.io/linuxserver/projectsend:version-r1295
+    apiVersion: v2
+    appVersion: r1295
+    created: "2022-08-02T21:44:20.773038945Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.5
+    description: A self-hosted application that lets you upload files and assign them
+      to specific clients that you create yourself
+    digest: 522243b9d35f4cc78de791fbd940f45518b789573faf83d85b033d9358ea1c78
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/projectsend
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/projectsend.jpg
+    keywords:
+    - project
+    - send
+    - upload
+    - files
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: projectsend
+    sources:
+    - https://www.projectsend.org/
+    - https://hub.docker.com/r/linuxserver/projectsend
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/projectsend-2.0.0/projectsend-2.0.0.tgz
+    version: 2.0.0
+  remmina:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-1.2.0-rcgit.29dfsg-1ubuntu1 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: remmina
+          image: ghcr.io/linuxserver/remmina:version-1.2.0-rcgit.29dfsg-1ubuntu1
+    apiVersion: v2
+    appVersion: 1.2.0
+    created: "2022-08-02T21:44:20.930009245Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A remote desktop client written in GTK
+    digest: a6299298e9ca4641a83aa684c456ca26f5dee75918dd8accc97104b00c2e8e0b
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/remmina
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/remmina-icon.png
+    keywords:
+    - remina
+    - remote
+    - desktop
+    - client
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: remmina
+    sources:
+    - https://github.com/linuxserver/docker-remmina
+    - https://remmina.org/
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/remmina-0.1.4/remmina-0.1.4.tgz
+    version: 0.1.4
+  shiori:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Bump mariadb to 1.0.5
+        - kind: changed
+          description: Change tag to version-v1.5.0 in order to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: shiori
+          image: ghcr.io/nicholaswilde/shiori:version-v1.5.0
+    apiVersion: v2
+    appVersion: v1.5.0
+    created: "2022-08-02T21:44:21.099324576Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.5
+    - condition: postgres.enabled
+      name: postgres
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.0
+    description: A simple bookmark manager built with Go
+    digest: f3a35137e4e830e504dad8e284ec87579fbf761fcda5dea2f4ec9f4e6446df88
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/shiori
+    icon: https://github.com/go-shiori/shiori/raw/master/internal/view/res/apple-touch-icon-152x152.png
+    keywords:
+    - shiori
+    - bookmark
+    - bookmark-manager
+    - web-interface
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: shiori
+    sources:
+    - https://github.com/go-shiori/shiori
+    - https://github.com/nicholaswilde/docker-shiori
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/shiori-1.0.1/shiori-1.0.1.tgz
+    version: 1.0.1
+  shorturl:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: changed
+          description: Change tag to version-v0.1.0 to reduce the number of chart updates.
+        - kind: removed
+          description: secret from values.yaml
+      artifacthub.io/images: |
+        - name: shorturl
+          image: ghcr.io/nicholaswilde/shorturl:version-v0.1.0
+    apiVersion: v2
+    appVersion: v0.1.0
+    created: "2022-08-02T21:44:21.286293777Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: Self hosted web app for shortening urls (URL shortener)
+    digest: 61cff6f68435f406d8d60fc1d9efcd78939b215779cb4c387236c84873e29311
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/shorturl
+    keywords:
+    - url
+    - shortener
+    - shorten
+    - shorturl
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: shorturl
+    sources:
+    - https://github.com/prologic/shorturl
+    - https://github.com/nicholaswilde/docker-shorturl
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/shorturl-1.0.0/shorturl-1.0.0.tgz
+    version: 1.0.0
+  sickchill:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: sickchill
+          image: ghcr.io/linuxserver/sickchill:2021.5.10-1-ls63
+    apiVersion: v2
+    appVersion: 2021.5.10
+    created: "2022-08-02T21:44:21.450155419Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: An Automatic Video Library Manager for TV Shows
+    digest: 00cb0dd2d26c505a655e34f3d79464c3f53ff3c1aeaf7f9af415317f28729880
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/sickchill
+    icon: https://github.com/SickChill/SickChill/raw/master/sickchill/gui/slick/images/ico/android-chrome-256x256.png
+    keywords:
+    - sickchill
+    - video
+    - library
+    - manager
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: sickchill
+    sources:
+    - https://github.com/linuxserver/docker-sickchill
+    - https://github.com/SickChill/SickChill
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/sickchill-0.1.0/sickchill-0.1.0.tgz
+    version: 0.1.0
+  sickgear:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to release_0.25.4
+      artifacthub.io/images: |
+        - name: sickgear
+          image: ghcr.io/linuxserver/sickgear:version-release_0.25.4
+    apiVersion: v2
+    appVersion: release_0.25.4
+    created: "2022-08-02T21:44:21.607435643Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: Provides management of TV shows and/or Anime, it detects new episodes,
+      links downloader apps, and more
+    digest: 3d0aed30861753776780f12dcca1e03c4d4180894debc2b13e5556398c19d122
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/sickgear
+    icon: https://avatars.githubusercontent.com/u/9690267?s=200&v=4
+    keywords:
+    - sickgear
+    - manager
+    - tv
+    - shows
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: sickgear
+    sources:
+    - https://github.com/linuxserver/docker-sickgear
+    - https://github.com/SickGear/SickGear
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/sickgear-0.3.0/sickgear-0.3.0.tgz
+    version: 0.3.0
+  smokeping:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-2.7.3-r5 in order to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: smokeping
+          image: ghcr.io/linuxserver/smokeping:version-2.7.3-r5
+    apiVersion: v2
+    appVersion: 2.7.3
+    created: "2022-08-02T21:44:21.783511117Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: Keep track of your network latency.
+    digest: afad0c8707dd3012ff1e1439b2f0f1b4d6c8346ce96dda899f98312f6373189e
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/smokeping
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/smokeping.png
+    keywords:
+    - smokeping
+    - network
+    - latency
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: smokeping
+    sources:
+    - https://oss.oetiker.ch/smokeping/
+    - https://hub.docker.com/r/linuxserver/smokeping
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/smokeping-0.1.24/smokeping-0.1.24.tgz
+    version: 0.1.24
+  snipe-it:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Bump tag to version-v5.1.8
+      artifacthub.io/images: |
+        - name: snipe-it
+          image: ghcr.io/linuxserver/snipe-it:version-v5.1.8
+    apiVersion: v2
+    appVersion: v5.1.8
+    created: "2022-08-02T21:44:21.98474646Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~1.0.3
+    description: Open source asset management
+    digest: dfe2c144b596f0061649a26794929740fcd5317e04d262c17cd6ef44fe30c89b
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/snipe-it
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/snipe-it.jpg
+    keywords:
+    - snipeit
+    - snipe
+    - asset
+    - management
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: snipe-it
+    sources:
+    - https://snipeitapp.com/
+    - https://hub.docker.com/r/linuxserver/
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/snipe-it-1.0.5/snipe-it-1.0.5.tgz
+    version: 1.0.5
+  sqlitebrowser:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
+          description: Change tag to version-3.12.2-02876202105241947ubuntu18.04.1 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: sqlitebrowser
+          image: ghcr.io/linuxserver/sqlitebrowser:version-3.12.2-02876202105241947ubuntu18.04.1
+    apiVersion: v2
+    appVersion: 3.12.2
+    created: "2022-08-02T21:44:22.142297384Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A high quality, visual, open source tool to create, design, and edit
+      database files compatible with SQLite
+    digest: f221d42ba4f8de27ed904af59055ff844b9692bb46384a97d901678c74464d73
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/sqlitebrowser
+    icon: https://sqlitebrowser.org/images/sqlitebrowser.svg
+    keywords:
+    - sqlite
+    - browser
+    - sqlitebrowser
+    - database
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: sqlitebrowser
+    sources:
+    - https://github.com/linuxserver/docker-sqlitebrowser
+    - https://sqlitebrowser.org/
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/sqlitebrowser-1.0.1/sqlitebrowser-1.0.1.tgz
+    version: 1.0.1
+  static:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: changed
+          description: Change tag to version-ee8a20c in order to reduce the number of chart updates.
+        - kind: removed
+          description: secret from values.yaml
+      artifacthub.io/images: |
+        - name: static
+          image: ghcr.io/nicholaswilde/static:version-ee8a20c
+    apiVersion: v2
+    appVersion: ee8a20c
+    created: "2022-08-02T21:44:22.304404821Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A self-hosted static file serving app which does nothing more than
+      just serve up static files from a mounted volume.
+    digest: bd944efed6a4ff5f64ed610f0e472d60408e09e0e16556fd0f23402cd19c5fa8
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/static
+    keywords:
+    - app
+    - web
+    - filesystem
+    - static
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: static
+    sources:
+    - https://github.com/prologic/static
+    - https://github.com/nicholaswilde/docker-static
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/static-1.0.0/static-1.0.0.tgz
+    version: 1.0.0
+  syncthing:
+  - annotations:
+      artifacthub.io/changes: |
+        - Bumped tag to 1.14.0
+        - Removed nginx ingress annotation
+      artifacthub.io/images: |
+        - name: syncthing
+          image: syncthing/syncthing:1.14.0
+    apiVersion: v2
+    appVersion: 1.14.0
+    created: "2022-08-02T21:44:22.488268417Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    deprecated: true
+    description: ⛔ DEPRECATED A continuous file synchronization program.
+    digest: e7f501610c19cf661f0e9ef01d9e0134b04fbd4fd3cb6665eb6e7ab7203ed2f6
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/syncthing
+    icon: https://github.com/syncthing/syncthing/raw/main/assets/logo-128.png
+    keywords:
+    - sync
+    - thing
+    - syncronization
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: syncthing
+    sources:
+    - https://syncthing.net/
+    - https://hub.docker.com/r/syncthing/syncthing
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/syncthing-0.1.8/syncthing-0.1.8.tgz
+    version: 0.1.8
+  todo:
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release.
+      artifacthub.io/images: |
+        - name: template
+          image: ghcr.io/nicholaswilde/todo:941c0d3-ls1
+    apiVersion: v2
+    appVersion: 941c0d3
+    created: "2022-08-02T21:44:22.642042931Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    description: A simple self-hosted todo manager
+    digest: 838fbcf7e07d9319873ec846e8a8de132d4b1a302706a07d48c9ef47a3296e5b
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/todo
+    icon: https://github.com/prologic/todo/raw/master/static/icons/android-chrome-512x512.png
+    keywords:
+    - todo
+    - list
+    - self-hosted
+    - web
+    - webapp
+    - todoapp
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: todo
+    sources:
+    - https://github.com/prologic/todo
+    - https://github.com/nicholaswilde/docker-todo
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/todo-0.1.0/todo-0.1.0.tgz
+    version: 0.1.0
+  transmission:
+  - annotations:
+      artifacthub.io/changes: |
+        - Added deprecated tag.
+      artifacthub.io/images: |
+        - name: transmission
+          image: ghcr.io/linuxserver/transmission:3.00-r2-ls81
+    apiVersion: v2
+    appVersion: "3.00"
+    created: "2022-08-02T21:44:22.8162018Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    deprecated: true
+    description: ⛔️ DEPRECATED A Fast, Easy, and Free BitTorrent Client.
+    digest: ae8f5452b08666fe71400263e91ee2dc99f4caaaa5dc844777d35ec33c8c8f0f
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/transmission/transmission
+    icon: https://raw.githubusercontent.com/transmission/transmission/master/web/public_html/images/webclip-icon.png
+    keywords:
+    - transmission
+    - bittorrent
+    - torrent
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: transmission
+    sources:
+    - https://transmissionbt.com/
+    - https://hub.docker.com/r/linuxserver/transmission
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/transmission-0.2.19/transmission-0.2.19.tgz
+    version: 0.2.19
+  twtxt:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Change tag to version-0.1.1 in order to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: twtxt
+          image: ghcr.io/nicholaswilde/twtxt:version-0.1.1
+    apiVersion: v2
+    appVersion: 0.1.1
+    created: "2022-08-02T21:44:23.019268148Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A Self-Hosted, Twitter™-like Decentralised microBlogging platform.
+      No ads, no tracking, your content, your data!
+    digest: c35fd3176ad9d3e0eb26503ecf8f45c83a95fc928e4cda66ae9dae2279c2eaf1
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/twtxt
+    icon: https://twtxt.net/media/XsLsDHuisnXcL6NuUkYguK.png
+    keywords:
+    - twtxt
+    - blogging
+    - blog
+    - social-network
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: twtxt
+    sources:
+    - https://github.com/prologic/twtxt
+    - https://github.com/nicholaswilde/docker-twtxt
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/twtxt-1.0.0/twtxt-1.0.0.tgz
+    version: 1.0.0
+  wiki:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: values.schema.json
+        - kind: changed
+          description: Bump common to 0.1.13
+        - kind: changed
+          description: Simplify values.yaml
+        - kind: changed
+          description: Change tag to version-900b76a to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: wiki
+          image: ghcr.io/nicholaswilde/wiki:version-900b76a
+    apiVersion: v2
+    appVersion: 900b76a
+    created: "2022-08-02T21:44:23.170408155Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A self-hosted well uh wiki engine or content management system.
+    digest: 4993508552999b3319005c588c30d11983dee11a77fe9902553727acc7e83f52
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/wiki
+    keywords:
+    - wiki
+    - web
+    - blog
+    - cms
+    - app
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: wiki
+    sources:
+    - https://github.com/prologic/wiki
+    - https://github.com/nicholaswilde/docker-wiki
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/wiki-1.0.0/wiki-1.0.0.tgz
+    version: 1.0.0
+  wikijs:
+  - annotations:
+      artifacthub.io/changes: |
+        - Deprecated
+      artifacthub.io/images: |
+        - name: wikijs
+          image: ghcr.io/linuxserver/wikijs:2.5.191-ls25
+    apiVersion: v2
+    appVersion: 2.5.191
+    created: "2022-08-02T21:44:23.365814982Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.8
+    deprecated: true
+    description: ⛔ DEPRECATED The most powerful and extensible open source Wiki software.
+    digest: d34df26f78f9524e7e1b42218a7a4687a838c08fc1f7b7da582deb75b3a4bb4b
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/wikijs
+    icon: https://github.com/nicholaswilde/helm-charts/raw/main/images/wikijs.jpg
+    keywords:
+    - wiki
+    - js
+    - javascript
+    - text
+    - editor
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: wikijs
+    sources:
+    - https://wiki.js.org/
+    - https://hub.docker.com/r/linuxserver/wikijs
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/wikijs-0.2.3/wikijs-0.2.3.tgz
+    version: 0.2.3
+  writefreely:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial release.
+      artifacthub.io/images: |
+        - name: writefreely
+          image: ghcr.io/nicholaswilde/writefreely:version-0.13.1
+    apiVersion: v2
+    appVersion: 0.13.1
+    created: "2022-08-02T21:44:23.532501531Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.13
+    description: A simple, federated blogging platform.
+    digest: 00cd4ab57381acda73f66e560bed6a86b8ef87d936e5d2664d300847f04e2416
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/writefreely
+    icon: https://avatars.githubusercontent.com/u/45876560?s=200&v=4
+    keywords:
+    - writefreely
+    - blog
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: writefreely
+    sources:
+    - https://github.com/writefreely/writefreely
+    - https://github.com/nicholaswilde/docker-writefreely
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/writefreely-1.0.0/writefreely-1.0.0.tgz
+    version: 1.0.0
+generated: "2022-08-02T21:44:23.532513031Z"
