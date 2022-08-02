@@ -1,7 +1,7 @@
 ---
 apiVersion: v2
 appVersion: "13.3"
-version: 0.1.0
+version: 0.1.1
 name: postgres
 description: The World's Most Advanced Open Source Relational Database
 type: application
@@ -9,7 +9,7 @@ home: "https://github.com/nicholaswilde/helm-charts/tree/main/charts/postgres"
 icon: "https://d1q6f0aelx0por.cloudfront.net/product-logos/library-postgres-logo.png"
 dependencies:
   - name: common
-    version: ~0.1.8
+    version: ~0.1.14
     repository: https://nicholaswilde.github.io/helm-charts/
 keywords:
   - postgres
@@ -23,6 +23,7 @@ maintainers:
     email: ncwilde43@gmail.com
 annotations:
   artifacthub.io/changes: |
+    - Bump common to 0.1.14.
     - Initial release.
   artifacthub.io/images: |
     - name: template
