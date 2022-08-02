@@ -1537,6 +1537,54 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: changed
+          description: Use common 0.1.14: bump mariadb to 1.0.5, postgres to 0.1.1
+        - kind: changed
+          description: Bump mariadb to 1.0.4
+        - kind: changed
+          description: Change tag to version-v2.0.1 to reduce the number of chart updates.
+      artifacthub.io/images: |
+        - name: papermerge
+          image: ghcr.io/linuxserver/papermerge:version-v2.0.1
+    apiVersion: v2
+    appVersion: v2.0.1
+    created: "2022-08-02T21:51:03.942389002Z"
+    dependencies:
+    - name: common
+      repository: https://nicholaswilde.github.io/helm-charts/
+      version: ~0.1.14
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://xe2io.github.io/nicholaswilde__helm-charts/
+      version: ~1.0.7
+    - condition: postgres.enabled
+      name: postgres
+      repository: https://xe2io.github.io/nicholaswilde__helm-charts/
+      version: ~0.1.1
+    description: Designed for scanned documents. Perfect software that will help you
+      reduce paper clutter and keep your business organized.
+    digest: 8d4b1db4d92569f2b4c8b0d8e10a3422a625096fa7dc79a9bc55494caccfc79d
+    home: https://github.com/nicholaswilde/helm-charts/tree/main/charts/papermerge
+    icon: https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/papermerge-icon.png
+    keywords:
+    - paper
+    - merge
+    - document
+    - scan
+    - scanner
+    maintainers:
+    - email: ncwilde43@gmail.com
+      name: nicholaswilde
+    name: papermerge
+    sources:
+    - https://www.papermerge.com/
+    - https://hub.docker.com/r/linuxserver/papermerge
+    type: application
+    urls:
+    - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/papermerge-1.0.3/papermerge-1.0.3.tgz
+    version: 1.0.3
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: changed
           description: Bump mariadb to 1.0.4
         - kind: changed
           description: Change tag to version-v2.0.1 to reduce the number of chart updates.
@@ -2432,4 +2480,4 @@ entries:
     urls:
     - https://github.com/xe2io/nicholaswilde__helm-charts/releases/download/writefreely-1.0.0/writefreely-1.0.0.tgz
     version: 1.0.0
-generated: "2022-08-02T21:46:24.771047797Z"
+generated: "2022-08-02T21:51:03.942420803Z"
